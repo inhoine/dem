@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Login.css";
+
 
 
 function LoginForm({Login, error}) {
@@ -26,7 +28,7 @@ function LoginForm({Login, error}) {
                     </div>
                     <div>
                     <Link className="forgot-pw" to={'/forgot'}>Quên mật khẩu?</Link>
-                    <input className='btn-dangnhap' type="submit" value="Đăng nhập" />
+                    <Link className="homepg" to={'/home'}><button className="btn-dangnhap">Đăng nhập</button></Link>
                     </div>
                     </div>
                 </div>
